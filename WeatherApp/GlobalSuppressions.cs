@@ -1,0 +1,12 @@
+﻿
+//// This file is used by Code Analysis to maintain SuppressMessage 
+//// attributes that are applied to this project.
+//// Project-level suppressions either have no target or are given 
+//// a specific target and scoped to a namespace, type, member, etc.
+
+//[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "CA1305:The behavior of 'DateTime.ToString(string)' could vary based on the current user's locale settings. Replace this call in 'SampleDataController.WeatherForecasts()' with a call to 'DateTime.ToString(string, IFormatProvider)'.", Justification = "<Pending>", Scope = "member", Target = "~M:WeatherApp.Controllers.SampleDataController.WeatherForecasts~System.Collections.Generic.IEnumerable{WeatherApp.Controllers.SampleDataController.WeatherForecast}")]
+//[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "CA1822:Member WeatherForecasts does not access instance data and can be marked as static (Shared in VisualBasic)", Justification = "<Pending>", Scope = "member", Target = "~M:WeatherApp.Controllers.SampleDataController.WeatherForecasts~System.Collections.Generic.IEnumerable{WeatherApp.Controllers.SampleDataController.WeatherForecast}")]
+//[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "CA1822:Member Configure does not access instance data and can be marked as static (Shared in VisualBasic)", Justification = "<Pending>", Scope = "member", Target = "~M:WeatherApp.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)")]
+//[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "CA1822:Member ConfigureServices does not access instance data and can be marked as static (Shared in VisualBasic)", Justification = "<Pending>", Scope = "member", Target = "~M:WeatherApp.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)")]
+//[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "CA1034:Do not nest type WeatherForecast. Alternatively, change its accessibility so that it is not externally visible.", Justification = "<Pending>", Scope = "type", Target = "~T:WeatherApp.Controllers.SampleDataController.WeatherForecast")]
+//[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Build", "CA1052:Type 'Program' is a static holder type but is neither static nor NotInheritable", Justification = "<Pending>", Scope = "type", Target = "~T:WeatherApp.Program")]
