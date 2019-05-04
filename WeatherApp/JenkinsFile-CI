@@ -1,0 +1,23 @@
+pipeline {
+  agent any
+  stages {
+    stage('Checkout code') {
+        steps {
+				checkout([$class: 'GitSCM', branches: [[name: "master"]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'lalityay', url: "https://github.com/lalityay/DevOpsHackathon"]]])
+            }
+        }
+    
+    stage('Build docker image') {
+      steps {
+        sh 'docker build -t rakesho/weatherapp .'
+      }
+    }
+    stage('Push result image') {
+		  steps {
+			withDockerRegistry(credentialsId: 'rakesho', url:'https://cloud.docker.com/repository/docker/rakesho/devopshackathon') {
+			  sh 'docker push rakesho/weatherapp'
+			}
+		}
+    }
+  }
+}
