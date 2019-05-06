@@ -9,7 +9,7 @@ pipeline {
     
     stage('Build docker image') {
       steps {
-        bat 'docker build -t rakesho/weatherapp .'
+        bat 'powershell "docker build -t rakesho/weatherapp ."'
       }
     }
     stage('Push result image') {
