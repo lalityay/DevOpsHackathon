@@ -9,13 +9,13 @@ pipeline {
     
     stage('Build docker image') {
       steps {
-        bat 'powershell "docker build -t rakesho/weatherapp ."'
+        sh 'docker build -t rakesho/weatherapp .'
       }
     }
     stage('Push result image') {
 		  steps {
 			withDockerRegistry(credentialsId: 'rakesho', url:'https://cloud.docker.com/repository/docker/rakesho/devopshackathon') {
-			  bat 'docker push rakesho/weatherapp'
+			  sh 'docker push rakesho/weatherapp'
 			}
 		}
     }
